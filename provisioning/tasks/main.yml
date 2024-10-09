@@ -2,14 +2,14 @@
 # tasks file for provisioning
 - name: install package for maven
   apt: name={{ item }} state=present
+    update_cache: yes
   with_items:
     - maven
     - git
     - default-jdk
-    update_cache: yes
 
 - name: clone boxfuse from git
-- git:
+  git:
     repo: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
     dest: {{ dest_folder }}
     clone: yes
