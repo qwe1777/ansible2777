@@ -7,3 +7,9 @@
     - git
     - default-jdk
     update_cache: yes
+
+- name: clone boxfuse from git
+- git:
+    repo: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
+    dest: /srv/checkout
+    clone: yes
