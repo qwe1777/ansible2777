@@ -11,5 +11,16 @@
 - name: clone boxfuse from git
 - git:
     repo: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
-    dest: /srv/checkout
+    dest: {{ dest_folder }}
     clone: yes
+
+- name: run mvn package
+  shell: mvn package
+  args:
+    chdir: {{ dest_boxfuse }}
+
+- name: fetch .war files
+  synchronize:
+    src: /home/boxfuse-sample-java-war-hello/target/hello-1.0.war
+    dest: /home/boxfuse
+    mode: pull
