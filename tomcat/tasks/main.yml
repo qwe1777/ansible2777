@@ -1,7 +1,9 @@
 ---
 # tasks file for tomcat
 - name: install tomcat9
-  apt: tomcat9
+  apt:
+    name: tomcat9
+    state: present
 
 - name: copy .war files to Tomcat directory
   synchronize:
