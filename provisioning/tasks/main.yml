@@ -19,7 +19,7 @@
     chdir: "{{ dest_boxfuse }}"
 
 - name: fetch .war files
-  synchronize:
+  copy:
     src: /home/boxfuse/target/hello-1.0.war
     dest: /home/boxfuse
-    mode: pull
+
