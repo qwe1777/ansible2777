@@ -1,4 +1,4 @@
 ---
 # defaults file for provisioning
 dest_folder: /home/boxfuse
-dest_boxfuse: /home/boxfuse/boxfuse-sample-java-war-hello
+dest_boxfuse: /home/boxfuse/
