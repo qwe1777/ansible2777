@@ -1,1 +1,15 @@
+---
+- name: provisioning
+  hosts: web
+  become: yes
+
+  roles:
+  - provisioning
+
+- name: runing .war files on Tomcat
+  hosts: db
+  become: yes
+
+  roles:
+   - tomcat
 
