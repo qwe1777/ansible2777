@@ -1,0 +1,9 @@
+---
+# tasks file for provisioning
+- name: install package for maven
+  apt: name={{ item }} state=present
+  with_items:
+    - maven
+    - git
+    - default-jdk
+    update_cache: yes
