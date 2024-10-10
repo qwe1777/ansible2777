@@ -9,7 +9,7 @@
   synchronize:
     src: /home/boxfuse/target/hello-1.0.war
     dest: "{{ tomcat_dir }}"
-  delegate_to: 130.193.53.159
+  delegate_to: db
 
 
 
