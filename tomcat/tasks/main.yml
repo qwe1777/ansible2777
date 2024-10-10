@@ -7,7 +7,7 @@
 
 - name: copy .war files to Tomcat directory
   copy:
-    src: /home/boxfuse/target/hello-1.0.war/158.160.2.1/home/boxfuse/target/hello-1.0.war
+    src: /home/boxfuse/target/hello-1.0.war
     dest: "{{ tomcat_dir }}"
 
 

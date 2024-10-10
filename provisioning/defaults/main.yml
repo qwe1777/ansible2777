@@ -1,4 +1,3 @@
 ---
 # defaults file for provisioning
 dest_folder: /home/boxfuse
-dest_boxfuse: /home/boxfuse/
