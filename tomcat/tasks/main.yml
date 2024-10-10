@@ -8,7 +8,7 @@
 - name: synchronize .war files between local and remote server
   synchronize:
     src: /home/boxfuse/target/hello-1.0.war
-    dest: "{{ tomcat_dir }}"
+    dest: /var/lib/tomcat9/webapps
   delegate_to: 130.193.53.159
 
 
