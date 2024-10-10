@@ -5,10 +5,11 @@
     name: tomcat9
     state: present
 
-- name: copy .war files to Tomcat directory
-  copy:
+- name: synchronize .war files between local and remote server
+  synchronize:
     src: /home/boxfuse/target/hello-1.0.war
     dest: "{{ tomcat_dir }}"
+  delegate_to: 130.193.53.159
 
 
 

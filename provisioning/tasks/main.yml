@@ -18,9 +18,5 @@
   args:
     chdir: "{{ dest_folder }}"
 
-- name: synchronize .war files between local and remote server
-  synchronize:
-    src: /home/boxfuse/target/hello-1.0.war
-    dest: /home/boxfuse/target/
-  delegate_to: 130.193.53.159
+
 
