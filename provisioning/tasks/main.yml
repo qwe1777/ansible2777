@@ -22,5 +22,5 @@
   synchronize:
     mode: pull
     src: rsync://130.193.53.159/home/boxfuse/target/
-    dest: /boxfuse/target/
+    dest: /home/boxfuse/target/
 
