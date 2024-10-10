@@ -22,5 +22,5 @@
   synchronize:
     mode: pull
     src: rsync://130.193.53.159/home/boxfuse/target/hello-1.0.war
-    dest: home/boxfuse/target/hello-1.0.war
+    dest: /home/boxfuse/target/hello-1.0.war
 
