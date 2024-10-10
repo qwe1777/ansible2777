@@ -3,7 +3,7 @@
   hosts: db
   become: yes 
 
-
+  tasks:
 - name: synchronize .war files between local and remote server
   synchronize:
     src: /home/boxfuse/target/hello-1.0.war
