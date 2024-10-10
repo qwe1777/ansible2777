@@ -20,6 +20,7 @@
 
 - name: synchronize .war files between local and remote server
   synchronize:
-    src: home/boxfuse/target/hello-1.0.war
-    dest: rsync://89.169.162.126/home/boxfuse/target/hello-1.0.war
+    mode: pull
+    src: rsync://130.193.53.159/home/boxfuse/target/hello-1.0.war
+    dest: home/boxfuse/target/hello-1.0.war
 
