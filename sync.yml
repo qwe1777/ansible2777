@@ -6,6 +6,19 @@
   tasks:
   - name: sync .war files
     synchronize:
+      src: /home/boxfuse/target/hello-1.0.war---
+- name: test sync
+  hosts: db
+  become: yes
+
+- name: copy
+  hosts: 127.0.0.1
+  connection: local
+  become: yes
+
+  tasks:
+  - name: sync .war files
+    synchronize:
       src: /home/boxfuse/target/hello-1.0.war
       dest: /var/lib/tomcat9/webapps
-    delegate_to: 130.193.53.159
+    delegate_to: 158.160.20.166
