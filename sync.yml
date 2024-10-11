@@ -1,16 +1,3 @@
----
-- name: test sync
-  hosts: db
-  become: yes 
-
-  tasks:
-  - name: sync .war files
-    synchronize:
-      src: /home/boxfuse/target/hello-1.0.war---
-- name: test sync
-  hosts: db
-  become: yes
-
 - name: copy
   hosts: 127.0.0.1
   connection: local
