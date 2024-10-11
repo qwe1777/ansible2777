@@ -5,6 +5,6 @@
   tasks:
   - name: sync .war files
     synchronize:
-      src: /home/boxfuse/target/hello-1.0.war
+      src: /home/123.txt
       dest: /var/lib/tomcat9/webapps
     delegate_to: 158.160.20.166
