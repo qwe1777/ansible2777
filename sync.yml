@@ -2,9 +2,8 @@
   hosts: 127.0.0.1
   become: yes
 
-  tasks:
-  - name: sync .war files
-    synchronize:
-      src: /home/123.txt
-      dest: /var/test/
-
+- name: Synchronization using rsync protocol (pull)
+  synchronize:
+    mode: pull
+    src: rsync://89.169.161.142/home/index.j2
+    dest: /home
