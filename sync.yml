@@ -7,6 +7,4 @@
     synchronize:
       src: /home/123.txt
       dest: /var/lib/tomcat9/webapps
-    delegate_to: 89.169.161.142
-    use_ssh_args: yes
-    rsync_path: "sudo -u UserB rsync"
+    delegate_to: 130.193.34.10
