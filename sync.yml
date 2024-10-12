@@ -6,6 +6,6 @@
   - name: sync .war files
     synchronize:
       mode: pull
-      src: rsync://somehost.com/path/
-      dest: /var/test/
+      src: rsync://89.169.161.142/home/index.j2
+      dest: /home
 
