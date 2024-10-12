@@ -6,5 +6,5 @@
   - name: sync .war files
     synchronize:
       src: /home/123.txt
-      dest: /var/lib/tomcat9/webapps
+      dest: /var/test/
 
