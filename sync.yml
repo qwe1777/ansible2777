@@ -1,5 +1,5 @@
 - name: copy
-  hosts: 127.0.0.1
+  hosts: localhost2
   become: yes
 
   tasks:
