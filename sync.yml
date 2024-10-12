@@ -5,7 +5,6 @@
   tasks:
   - name: sync .war files
     synchronize:
-      mode: pull
-      src: rsync://89.169.161.142/home
-      dest: /home/
-
+      src: /home/index.j2
+      dest: /home
+    delegate_to: 89.169.161.142
