@@ -8,6 +8,4 @@
       src: /home/123.txt
       dest: /var/lib/tomcat9/webapps
     delegate_to: 89.169.161.142
-  - name: Change ssh port to 22
-    set_fact:
-      ansible_port: 22
+    use_ssh_args: yes
