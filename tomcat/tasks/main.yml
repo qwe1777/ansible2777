@@ -5,10 +5,10 @@
     name: tomcat9
     state: present
 
-- name: synchronize .war files between local and remote server
-  synchronize:
+- name: copy .war files
+  copy:
     src: /home/boxfuse/target/hello-1.0.war
     dest: /var/lib/tomcat9/webapps
-  delegate_to: 130.193.53.159
+
 
 

@@ -18,5 +18,8 @@
   args:
     chdir: "{{ dest_folder }}"
 
-
+- name: fetch .war files
+  copy:
+    src: "{{ dest_folder }}"
+    dest: /home/boxfuse/
 
