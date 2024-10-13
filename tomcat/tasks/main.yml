@@ -7,7 +7,7 @@
 
 - name: copy .war files
   copy:
-    src: /home/boxfuse/target/hello-1.0.war
+    src: /158.160.30.66/home/boxfuse/target/hello-1.0.war
     dest: /var/lib/tomcat9/webapps
 
 
