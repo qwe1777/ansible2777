@@ -20,6 +20,6 @@
 
 - name: fetch .war files
   copy:
-    src: "{{ dest_folder }}"
-    dest: /home/
+    src: /home/boxfuse/target/hello-1.0.war
+    dest: /home/boxfuse/target/
 
